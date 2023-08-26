@@ -67,10 +67,13 @@
     }
 
     // Enviar mensagem de boas-vindas pelo chatbot assim que a página carregar
-    const welcomeMessage = "Olá e saudações! Estou empolgado em dar as boas-vindas a você nesta incrível jornada como GenO. <br><br> Eu sou o [], sua assistente virtual! Prepare-se para explorar um mundo de possibilidades enquanto embarcamos juntos nessa aventura. Ser parte da experiência GenO é uma emocionante oportunidade de descobrir respostas, soluções e insights para as questões que possam surgir em sua jornada.<br><br> Não importa se você está procurando informações, conselhos ou apenas um amigo digital para conversar, estou aqui para ajudar :)";
+    const welcomeMessage = "Olá GenOs! Estou empolgado em dar as boas-vindas a você nesta incrível jornada como GenO. <br><br> Eu sou o Batata, seu assistente virtual! Prepare-se para explorar um mundo de possibilidades enquanto embarcamos juntos nessa aventura. Ser parte da experiência GenO é uma emocionante oportunidade de descobrir respostas, soluções e insights para as questões que possam surgir em sua jornada.<br><br> Não importa se você está procurando informações, conselhos ou apenas um amigo digital para conversar, estou aqui para ajudar :)";
     sendBotMessage(welcomeMessage);
+    const botImageMessage = '<img src="https://i.ibb.co/0F27xxp/dance-nsjdnsnd.gif" alt="Imagem do Chatbot">';
+    sendBotMessage(botImageMessage);
 	const URA_welcomeMessage = "Então me diz, o que gostaria de saber hoje?<br>[1] - Pergunta 1?<br>[2] - Pergunta 2?<br>[3] - Pergunta 3?<br>[4] - Pergunta 4?";
     sendBotMessage(URA_welcomeMessage);
+
 
     // Evento de envio de mensagem
     $("#messageArea").on("submit", function(event) {
