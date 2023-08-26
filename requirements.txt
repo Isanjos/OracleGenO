@@ -24,7 +24,7 @@ sympy
 tokenizers==0.13.3
 torch
 tqdm==4.66.1
-transformers==4.32.0
+transformers
 typing_extensions==4.7.1
 urllib3==2.0.4
 Werkzeug==2.3.7
