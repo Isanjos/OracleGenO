@@ -1,9 +1,31 @@
 body,html{
 	height: 100%;
 	margin: 0;
-	background: rgb(44, 47, 59);
-   background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
-	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+	background: url('https://i.ibb.co/SwNzVtL/Abstracts-Open-Light-6.png') center center fixed;
+	background-size: cover;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Altura da faixa */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor da faixa */
+    z-index: 1000; /* Coloque a faixa acima de tudo */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    background-image: url('https://i.ibb.co/tJc49rX/Oracle-rgb-c74634.png'); /* Substitua 'URL_DA_IMAGEM' pela URL da imagem desejada */
+    background-size: cover; /* Ajuste o tamanho da imagem */
+    z-index: 1001; /* Coloque a imagem acima da faixa */
+    opacity: 1; /* Opacidade da imagem */
 }
 
 .chat{
@@ -150,7 +172,7 @@ border-radius: 0 0 15px 15px !important;
 	margin-bottom: auto;
 	margin-left: 10px;
 	border-radius: 25px;
-	background-color: rgb(82, 172, 255);
+	background-color: rgb(255, 255, 255);
 	padding: 10px;
 	position: relative;
 }
@@ -159,7 +181,7 @@ border-radius: 0 0 15px 15px !important;
 	margin-bottom: auto;
 	margin-right: 10px;
 	border-radius: 25px;
-	background-color: #58cc71;
+	background-color: #fff0d1;
 	padding: 10px;
 	position: relative;
 }
