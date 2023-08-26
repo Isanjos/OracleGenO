@@ -5,7 +5,7 @@ click==8.1.7
 colorama==0.4.6
 filelock==3.12.2
 Flask
-fsspec==2023.6.0
+fsspec
 gunicorn==21.2.0
 huggingface-hub==0.16.4
 idna==3.4
