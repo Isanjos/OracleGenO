@@ -6,7 +6,7 @@ body,html{
 }
 body::before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -17,7 +17,7 @@ body::before {
 
 body::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 300px; /* Largura da imagem */
@@ -29,7 +29,7 @@ body::after {
 }
 
 .chat{
-	margin-top: auto;
+	margin-top: 150px;
 	margin-bottom: auto;
 }
 .card{
