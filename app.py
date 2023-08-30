@@ -3,8 +3,10 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 qa_database = [
-    ("Qual é a cor do céu?", "Azul."),
-    ("Quanto é 2 + 2?", "4."),
+    ("1", "Parece estranho, mas confia no processo! <br><br> Para conseguir acesso ao seu email e às plataformas da Oracle, é necessário: Ligar para o número +55 11 5189-7346 <br> Durante a chamada, confirme sua solicitação (minha sugestão é falar I need to reset my email/SSO password) <br> Quando perguntado, informar, em inglês, seu nome, email Oracle e o nome do Hiring Manager - Alexandre Maioral. <br> Por fim, você receberá um email com a senha temporária que, por segurança, você deve alterar."),
+    ("2", "4."),
+    ("2", "4."),
+    ("2", "4."),
 ]
 @app.route("/")
 def index():
