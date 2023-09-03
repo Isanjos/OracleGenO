@@ -4,6 +4,11 @@ body,html{
 	background: url('https://i.ibb.co/SwNzVtL/Abstracts-Open-Light-6.png') center center fixed;
 	background-size: cover;
 }
+
+body {
+    position: relative;
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -12,7 +17,52 @@ body::before {
     width: 100%;
     height: 100px; /* Altura da faixa */
     background-color: rgba(0, 0, 0, 0.8); /* Cor da faixa */
-    z-index: 1000; /* Coloque a faixa acima de tudo */
+    z-index: 1; /* Coloque a faixa abaixo do conteúdo */
+}
+
+.button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	position: absolute;
+	border-radius: 12px;
+    top: 25px; /* Ajuste a posição vertical conforme necessário */
+    right: 8px; /* Ajuste a posição horizontal conforme necessário */
+    background-color:#c74634; /* Cor de fundo do botão */
+    color: #e4dbb8 ; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none;
+    cursor: pointer;
+	transition: all 0.5s;
+	cursor: pointer;
+    z-index: 2; /* Coloque o botão acima da faixa */
+}
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.button:hover span {
+	padding-right: 25px;
+}
+  
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button:hover {
+    color: #e4dbb8; 
 }
 
 body::after {
@@ -22,7 +72,7 @@ body::after {
     left: 0;
     width: 300px; /* Largura da imagem */
     height: 100px; /* Altura da imagem */
-    background-image: url('https://i.ibb.co/tJc49rX/Oracle-rgb-c74634.png'); /* Substitua 'URL_DA_IMAGEM' pela URL da imagem desejada */
+    background-image: url('https://i.ibb.co/tJc49rX/Oracle-rgb-c74634.png');
     background-size: cover; /* Ajuste o tamanho da imagem */
     z-index: 1001; /* Coloque a imagem acima da faixa */
     opacity: 1; /* Opacidade da imagem */
@@ -145,6 +195,8 @@ border-radius: 0 0 15px 15px !important;
 	background-color: #c23616 !important;
 }
 .user_info{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: 15px;

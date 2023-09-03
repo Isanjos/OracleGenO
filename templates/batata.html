@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_batata.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_batata.css') }}">
+
+
+
+    
+
+    <script type="text/javascript">
+    var userName = prompt("Olá! 😊 Qual é o seu nome? Como você gostaria de ser chamade na nossa conversa?");
+        function touchBatata() {
+            if (userName != "") {
+                alert(":D");
+                document.getElementById("batata").src = "./img/teste.png";
+            }
+        }
+
+        function touchLivro() {
+            if (userName != "") {
+                alert(userName +", estou estudando para uma certificação super interessante! E você? 📖🚀");
+                document.getElementById("batata").src = "./img/batataoracle.png";
+            }
+        }
+
+        function touchMaleta() {
+            if (userName != "") {
+                alert("É hora de trabalhar, " + userName + "! 😄 Qual a sua área de rotação? Estou feliz que a minha é longe da cozinha. 🔪🍟 "); 
+                document.getElementById("batata").src = "./img/";
+            }
+        }
+
+        function touchCafe() {
+            if (userName != "") {
+                alert("Ah, nada como um cafézinho! Não é mesmo, " + userName + "? Acho que vou pegar um snack também! 😋");
+                document.getElementById("batata").src = "./img/";
+            }
+        }
+
+        function touchHH() {
+            if (userName != "") {
+                alert("Finalmente sextou! Vamos de happy hour, " + userName + "? Você é do time #Karaokê 🎤 ou #Barzinho 🍺?");
+                document.getElementById("batata").src = "./img/";
+            }
+        }
+
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    <title>Batata</title>
+</head>
+<body onload="alert('Holla, ' + userName + '! Eu sou o Batata, o mascote GenO. Prazer em te conhecer! ✨😊');">
+    <header class="cabecalho">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Oracle">
+            <a href="chat.html" class="button"><span>Conheça o Chatbot</span></a>
+    </header>
+    <main class="conteudo">
+        <section>
+            <img id="batata" src="{{ url_for('static', filename='images/potato.png') }}" alt="Batata, o mascote GenO" onclick="touchBatata();" />
+        </section>
+        <section class="menu">
+            <div class="icone" onclick="touchLivro();">
+                <h2>Estudar</h2>
+                <img src="{{ url_for('static', filename='images/book.svg') }}" alt="Book">
+            </div>
+            <div class="icone" onclick="touchMaleta();">
+                <h2>Trabalhar</h2>
+                <img src="{{ url_for('static', filename='images/work.svg') }}" alt="Work">
+            </div>
+            <div class="icone" onclick="touchCafe();">
+                <h2>Pausa do Café</h2>
+                <img src="{{ url_for('static', filename='images/coffee.svg') }}" alt="Coffee">
+            </div>
+            <div class="icone" onclick="touchHH();">
+                <h2>Happy Hour</h2>
+                <img src="{{ url_for('static', filename='images/nightlife.svg') }}" alt="Nightlife">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

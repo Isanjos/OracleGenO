@@ -1,0 +1,159 @@
+body {
+    margin: 0 auto;
+    background-color: #F8F7F4;
+}
+
+.cabecalho {
+    background-color: #3A3632;
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: #3a3632;
+    padding: 10px; /* Adicione algum espaço ao redor do logotipo */
+}
+
+.cabecalho img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px; /* Margem para afastar o logotipo da borda esquerda e superior */
+}
+
+.logo {
+    width: 300px;
+}
+
+nav {
+    height: 80px;
+    margin: 50px;
+}
+
+nav li {
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #F8F7F4;
+
+    text-decoration: none;
+}
+
+.conteudo {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#batata {
+    width: 500px;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #3a3632;
+    margin: -20px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px; /* Ajuste o padding para as laterais */
+}
+
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu .icone {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e4dbb8; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+    text-decoration: none; /* Remova sublinhado padrão */
+    border-radius: 5px; /* Arredonde as bordas do botão */
+    transition: background-color 0.3s ease; /* Adicione transição suave de cor de fundo */
+}
+
+.menu .icone:hover {
+    background-color: #7e9595; /* Cor de fundo quando o mouse passa por cima */
+}
+
+
+.button {
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bold;
+	position: absolute;
+	border-radius: 12px;
+    top: 40px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px; /* Ajuste a posição horizontal conforme necessário */
+    background-color:#c74634; /* Cor de fundo do botão */
+    color: #e4dbb8 ; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none;
+    cursor: pointer;
+	transition: all 0.5s;
+	cursor: pointer;
+    z-index: 2; /* Coloque o botão acima da faixa */
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.button:hover span {
+	padding-right: 25px;
+}
+  
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.icone {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding: 13px;
+}
+
+.icone:hover {
+    background-color: #F8F7F4;
+    border-radius: 30px;
+}
+
+.drinks {
+    width: 66px;
+}

@@ -20,6 +20,14 @@ def index():
     welcome_message = "Bem-vindo ao ChatBot! Faça suas perguntas."
     return render_template('chat.html', welcome_message=welcome_message)
 
+@app.route('/batata.html')
+def batata():
+    return render_template('batata.html')
+
+@app.route('/chat.html')
+def chatbot():
+    return render_template('chat.html')
+
 @app.route("/get", methods=["GET", "POST"])
 def chat():
     msg = request.form["msg"]
