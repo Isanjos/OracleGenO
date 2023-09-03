@@ -5,44 +5,40 @@
     <link rel="stylesheet" href="style_batata.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_batata.css') }}">
 
-
-
-    
-
     <script type="text/javascript">
     var userName = prompt("Olá! 😊 Qual é o seu nome? Como você gostaria de ser chamade na nossa conversa?");
         function touchBatata() {
             if (userName != "") {
                 alert(":D");
-                document.getElementById("batata").src = "./img/teste.png";
+                document.getElementById("batata").src = "{{ url_for('static', filename='images/amor.png') }}";
             }
         }
 
         function touchLivro() {
             if (userName != "") {
                 alert(userName +", estou estudando para uma certificação super interessante! E você? 📖🚀");
-                document.getElementById("batata").src = "./img/batataoracle.png";
+                document.getElementById("batata").src = "{{ url_for('static', filename='images/estudar.png') }}";
             }
         }
 
         function touchMaleta() {
             if (userName != "") {
                 alert("É hora de trabalhar, " + userName + "! 😄 Qual a sua área de rotação? Estou feliz que a minha é longe da cozinha. 🔪🍟 "); 
-                document.getElementById("batata").src = "./img/";
+                document.getElementById("batata").src = "{{ url_for('static', filename='images/trabalho.png') }}";
             }
         }
 
         function touchCafe() {
             if (userName != "") {
                 alert("Ah, nada como um cafézinho! Não é mesmo, " + userName + "? Acho que vou pegar um snack também! 😋");
-                document.getElementById("batata").src = "./img/";
+                document.getElementById("batata").src = "{{ url_for('static', filename='images/cafe.png') }}";
             }
         }
 
         function touchHH() {
             if (userName != "") {
                 alert("Finalmente sextou! Vamos de happy hour, " + userName + "? Você é do time #Karaokê 🎤 ou #Barzinho 🍺?");
-                document.getElementById("batata").src = "./img/";
+                document.getElementById("batata").src = "{{ url_for('static', filename='images/karaoke.png') }}";
             }
         }
 
@@ -61,7 +57,7 @@
     </header>
     <main class="conteudo">
         <section>
-            <img id="batata" src="{{ url_for('static', filename='images/potato.png') }}" alt="Batata, o mascote GenO" onclick="touchBatata();" />
+            <img id="batata" src="{{ url_for('static', filename='images/hello.gif') }}" alt="Batata, o mascote GenO" onclick="touchBatata();" />
         </section>
         <section class="menu">
             <div class="icone" onclick="touchLivro();">

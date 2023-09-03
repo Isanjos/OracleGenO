@@ -1,7 +1,10 @@
 body {
     margin: 0 auto;
-    background-color: #F8F7F4;
+    background: url('https://i.ibb.co/gwKpMMM/96dpi-Data-Texture-3f.png') center center fixed;
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
 }
+
 
 .cabecalho {
     background-color: #3A3632;
@@ -57,13 +60,14 @@ nav a {
 }
 
 #batata {
+    margin: 20px auto 20px auto; /* Adicione 20px de margem inferior */
     width: 500px;
     cursor: pointer;
 }
 
 .menu {
     background-color: #3a3632;
-    margin: -20px auto 20px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
