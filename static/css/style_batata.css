@@ -70,7 +70,7 @@ nav a {
     margin: 20px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     padding: 10px 20px; /* Ajuste o padding para as laterais */
@@ -86,7 +86,10 @@ h2 {
 }
 
 .menu .icone {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralize verticalmente o conteúdo */
+    align-items: center; /* Centralize horizontalmente o conteúdo */
     margin: 10px;
     padding: 10px 20px;
     background-color: #e4dbb8; /* Cor de fundo do botão */
@@ -147,11 +150,17 @@ h2 {
     margin: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
     cursor: pointer;
     padding: 13px;
 }
+
+.icone:hover {
+    background-color: #F8F7F4;
+    border-radius: 30px;
+}
+
 
 .icone:hover {
     background-color: #F8F7F4;

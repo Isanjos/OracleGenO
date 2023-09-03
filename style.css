@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    background-color: #F8F7F4;
+}
+
+.cabecalho {
+    background-color: #3A3632;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content:center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+}
+
+nav {
+    height: 80px;
+    margin: 50px;
+}
+
+nav li {
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #B3311F;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #F8F7F4;
+
+    text-decoration: none;
+}
+
+.conteudo {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("./img/96dpi_DataTexture_3f.png");
+}
+
+#batata {
+    margin-top: 50px;
+    width: 500px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.menu {
+    background-color: #3a3632;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.icone {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding: 13px;
+}
+
+.icone:hover {
+    background-color: #F8F7F4;
+    border-radius: 30px;
+}
+
+.drinks {
+    width: 66px;
+}
