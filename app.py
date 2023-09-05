@@ -41,4 +41,4 @@ def get_Chat_response(text):
     return "Desculpe, não tenho uma resposta para essa pergunta."
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
